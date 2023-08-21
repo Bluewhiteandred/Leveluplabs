@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nom de Votre Jeu</title>
+    <!-- Lien vers le fichier CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Lien vers le fichier CSS de Lightbox -->
+    <link rel="stylesheet" href="C:\Users\Bouras\Desktop\Site\lightbox\src\css\lightbox.css">
+    <!-- Lien vers le fichier jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <!-- Lien vers le fichier JavaScript de Lightbox -->
+    <script src="lightbox/src/js/lightbox.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Nom de Votre Jeu</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">À Propos</a></li>
+                <li><a href="#features">Caractéristiques</a></li>
+                <li><a href="#news">Actualités</a></li>
+                <li><a href="#downloads">Téléchargements</a></li>
+                <li><a href="#community">Communauté</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="theme-btn" class="dark-mode-toggle">🌙 Mode Sombre</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="section">
+        <div class="section-content">
+            <h2>À Propos du Jeu</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed justo vel nisi finibus ultrices.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed justo vel nisi finibus ultrices.Lorem dolor sit amet, consectetur adipiscing elit. Quisque sed justo vel nisi finibus ultrices.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed justo vel nisi finibus ultrices.</p>
+
+            <div class="gallery">
+                <!-- Lien vers l'image avec la classe "lightbox" pour Lightbox -->
+                <a href="images/image01.jpg" data-lightbox="gallery"><img src="images/image1-thumb.jpg" alt="Image 1"></a>
+                <a href="images/image02.jpg" data-lightbox="gallery"><img src="images/image2-thumb.jpg" alt="Image 2"></a>
+                <a href="images/image03.jpg" data-lightbox="gallery"><img src="images/image3-thumb.jpg" alt="Image 3"></a>
+                <!-- Ajoutez d'autres images ici -->
+            </div>
+        </div>
+        
+    <section id="features" class="section">
+        <div class="section-content">
+            <h2>Caractéristiques</h2>
+            <ul>
+                <li>Caractéristique 1</li>
+                <li>Caractéristique 2</li>
+                <li>Caractéristique 3</li>
+                <!-- Ajoutez d'autres caractéristiques ici -->
+            </ul>
+        </div>
+    </section>
+
+    <section id="news" class="section">
+        <div class="section-content">
+            <h2>Actualités</h2>
+            <div class="news-article">
+                <h3>Titre de l'Article</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed justo vel nisi finibus ultrices.</p>
+                <a href="#" class="read-more">Lire Plus</a>
+            </div>
+            <!-- Répétez ce bloc pour d'autres articles -->
+        </div>
+    </section>
+
+    <section id="downloads" class="section">
+        <div class="section-content">
+            <h2>Téléchargements</h2>
+            <ul>
+                <li><a href="#">Télécharger sur Steam</a></li>
+                <li><a href="#">Télécharger sur Epic Games Store</a></li>
+                <!-- Ajoutez d'autres liens de téléchargement ici -->
+            </ul>
+        </div>
+    </section>
+
+    <section id="community" class="section">
+        <div class="section-content">
+            <h2>Communauté</h2>
+            <div class="social-media">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            </div>
+            <div class="newsletter">
+                <h3>Abonnez-vous à notre newsletter</h3>
+                <form>
+                    <input type="email" placeholder="Entrez votre adresse e-mail" required>
+                    <button type="submit">S'abonner</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="section-content">
+            <h2>Contactez-nous</h2>
+            <p>Pour toute question ou commentaire, veuillez nous contacter :</p>
+            <div class="contact-form">
+                <form>
+                    <input type="text" placeholder="Votre nom" required>
+                    <input type="email" placeholder="Votre adresse e-mail" required>
+                    <textarea placeholder="Votre message" required></textarea>
+                    <button type="submit">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Votre Jeu. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle("dark-mode");
+
+            const themeBtn = document.getElementById("theme-btn");
+            if (body.classList.contains("dark-mode"))
+            {
+                themeBtn.textContent = "☀️ Mode Clair";
+            } else 
+            {
+                themeBtn.textContent = "🌙 Mode Sombre";
+            }
+        }
+
+        const themeBtn = document.getElementById("theme-btn");
+        themeBtn.addEventListener("click", toggleDarkMode);
+    </script>
+</body>
+</html>

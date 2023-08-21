@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nom de Votre Jeu</title>
+    <!-- Lien vers le fichier CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Lien vers le fichier jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <!-- Lien vers le fichier JavaScript de Lightbox -->
+    <script src="lightbox/src/js/lightbox.js"></script>
+    <!-- Lien vers le fichier CSS de Lightbox -->
+    <link rel="stylesheet" href="lightbox/src/css/lightbox.css">
+</head>
+<body>
+    <div class="header-placeholder"></div> 
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Nom de Votre Jeu</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#story">Story</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#downloads">Downloads</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="theme-btn" class="dark-mode-toggle">&#127769; Dark mode</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section">
+        <div class="section-content">
+            <h2>Home</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed justo vel nisi finibus ultrices.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed justo vel nisi finibus ultrices.Lorem dolor sit amet, consectetur adipiscing elit. Quisque sed justo vel nisi finibus ultrices.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed justo vel nisi finibus ultrices</p>
+            <p><br></p>
+            <h3>Galerie d'image</h3>
+            <br>
+            <div class="gallery">
+                <div class="image-container">
+                    <h4>Image 1</h4>
+                    <a href="images/image01.jpg" data-lightbox="gallery"><img src="images/image01-thumb.jpg" alt="Image 1"></a>
+                </div>
+                <div class="image-container">
+                    <h4>Image 2</h4>
+                    <a href="images/image02.jpg" data-lightbox="gallery"><img src="images/image02-thumb.jpg" alt="Image 1"></a>
+                </div>
+                <div class="image-container">
+                    <h4>Image 3</h4>
+                    <a href="images/image03.jpg" data-lightbox="gallery"><img src="images/image03-thumb.jpg" alt="Image 1"></a>
+                </div>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed justo vel nisi finibus ultrices.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed justo vel nisi finibus ultrices.Lorem dolor sit amet, consectetur adipiscing elit. Quisque sed justo vel nisi finibus ultrices.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed justo vel nisi finibus ultrices</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="story" class="section">
+        <div class="section-content">
+            <h2>Story</h2>
+            <p>Meet Prima, a 20-year-old pirate woman with a wild and carefree spirit. She's a bit of a mess, with a tendency to be sloppy and disorganized, but she makes up for it with her playful and lively personality.<br>
+            When she finds herself stranded in the kingdom of Luma, she has no choice but to join the mercenary guild and take on a job.
+            Armed with magical guns and skilled in shield magic, Prima sets off on a series of adventures that will test her strength, bravery, and resolve. </p>
+             <div class="container">
+            <h1>Échos de Liberté : Les Aventures de Prima</h1>
+            <div class="chapter-list">
+                <h2>Chapters</h2>
+
+                <ul class="chapter-list">
+                    <li>
+                        <a href="Chapitres/Chapitre01.html">Chapitre 1</a>
+                        <p class="days-label">Disponible depuis :</p>
+                        <span class="days-counter" data-date="2023-07-01">0 </span> &nbsp;jours
+                    </li>
+                    <li>
+                        <a href="/chapter/676921">Chapitre 2</a>
+                        <p class="days-label">Disponible depuis : </p>
+                        <span class="days-counter" data-date="2023-07-15">0 </span> &nbsp;jours
+                    </li>
+                    <li>
+                        <a href="/chapter/676922">Chapitre 3</a>
+                        <p class="days-label">Disponible depuis : </p>
+                        <span class="days-counter" data-date="2023-08-1">0 </span> &nbsp;jours
+                    </li>
+                    <li>
+                        <a href="/chapter/676923">Chapitre 4</a>
+                        <p class="days-label">Disponible depuis : </p>
+                        <span class="days-counter" data-date="2023-08-10">0 </span> &nbsp;jours
+                    </li>
+    <!-- Ajoutez d'autres chapitres de la même manière... -->
+                </ul>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="news" class="section">
+        <div class="section-content">
+            <h2>Actualités</h2>
+            <div class="news-article">
+                <h3>Titre de l'Article</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed justo vel nisi finibus ultrices.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed justo vel nisi finibus</p>
+                <a href="#" class="read-more">Lire Plus</a>
+            </div>
+            <div class="news-article">
+                <h3>Titre de l'Article</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed justo vel nisi finibus ultrices.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed justo vel nisi finibus</p>
+                <a href="#" class="read-more">Lire Plus</a>
+            </div>
+            <!-- Répétez ce bloc pour d'autres articles -->
+        </div>
+    </section>
+
+    <section id="downloads" class="section">
+        <div class="section-content">
+            <h2>Téléchargements</h2>
+            <ul>
+                <li><a href="#">Télécharger sur Steam</a></li>
+                <li><a href="#">Télécharger sur Epic Games Store</a></li>
+                <!-- Ajoutez d'autres liens de téléchargement ici -->
+            </ul>
+        </div>
+    </section>
+
+    <section id="community" class="section">
+        <div class="section-content">
+            <h2>Communauté</h2>
+            <div class="social-media">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            </div>
+            <div class="newsletter">
+                <h3>Abonnez-vous à notre newsletter</h3>
+                <form>
+                    <input type="email" placeholder="Entrez votre adresse e-mail" required>
+                    <button type="submit">S'abonner</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="section-content">
+            <h2>Contactez-nous</h2>
+            <p>Pour toute question ou commentaire, veuillez nous contacter :</p>
+            <div class="contact-form">
+                <form>
+                    <input type="text" placeholder="Votre nom" required>
+                    <input type="email" placeholder="Votre adresse e-mail" required>
+                    <textarea placeholder="Votre message" required></textarea>
+                    <button type="submit">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Votre Jeu. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src=Script/Darkmode.js>// Fonction pour mettre le Darkmode
+    </script>
+    <script src=Script/Daycounter.js>// Fonction pour mettre à jour les compteurs de jours // Mettre à jour les compteurs au chargement de la page
+    </script>
+    <script>
+    // Activer la lightbox sur les liens d'images
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true
+    });
+    </script>
+</body>
+</html>

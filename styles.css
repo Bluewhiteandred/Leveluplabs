@@ -1,0 +1,510 @@
+/* Reset des styles par défaut des navigateurs */
+body, h1, h2, h3, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles de base */
+body {
+    font-family: Arial, sans-serif;
+}
+/* En-tête */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* En-tête fixe */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Section principale avec espace pour l'en-tête fixe */
+.section-content {
+    max-width: 1200px;
+    margin: 80px auto 0; /* Ajoutez 80px de marge en haut pour l'espace de l'en-tête */
+    padding: 0 20px;
+}
+
+/* Placeholder de l'en-tête pour maintenir l'espace */
+.header-placeholder {
+    height: 80px; /* Même hauteur que la marge en haut de .section-content */
+}
+
+/*Cookie Message */
+.cookie-message {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+}
+
+.cookie-message p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.cookie-message button {
+    background-color: #ff9900;
+    border: none;
+    color: #fff;
+    padding: 8px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cookie-message button:hover {
+    background-color: #ffcc66;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    font-size: 30px;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff9900;
+}
+
+/* Section générale */
+.section {
+    padding: 20px 0;
+    scroll-margin-top: 40px; /* Ajustez la valeur en fonction de la hauteur de votre en-tête */
+}
+
+.section-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Style pour l'ensemble du conteneur de l'image et du titre */
+.image-container {
+    text-align: center; /* Centrer le contenu horizontalement */
+    margin-bottom: 20px;
+}
+
+/* Style pour le titre au-dessus de l'image */
+.image-container h4 {
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 10px 0;
+    background-color: #f5f5f5;
+    border-radius: 5px 5px 0 0; /* Coins arrondis seulement en haut */
+}
+
+/* Review a droite des images*/
+.review-text {
+    font-size: 18px;
+    color: #ff9900;
+    text-align: center;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 160px; /* You can adjust the height as needed */
+}
+
+/* Style pour l'image dans le conteneur */
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 0 0 5px 5px; /* Coins arrondis seulement en bas */
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+/* Effet d'agrandissement et ombre au survol */
+.image-container:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Titres de section */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/*image de la section Gameply */
+.image-gallery {
+    display: flex;
+    gap: 20px;
+}
+
+.text-block {
+    flex: 1;
+}
+
+.image-block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image-block img {
+    max-width: 100%;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px; /* Ajoute un espace entre l'image et le texte */
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+/* Listes non ordonnées */
+ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 0px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.chapter-list {
+    margin-top: 20px;
+}
+
+.chapter-list h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.chapter-list ul {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.chapter-list li {
+    margin-bottom: 5px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.chapter-list a {
+    text-decoration: none;
+    color: #333;
+}
+
+.chapter-list a:hover {
+    color: #f00;
+}
+.days-label {
+    text-align: right;
+    margin: 0 10px 0 auto;
+    color: #888;
+}
+
+/* Articles de news */
+.news-article {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Style pour le bouton "Lire Plus" */
+.read-more {
+    display: inline-block;
+    background-color: #ff9900;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Centrer horizontalement */
+.section-content01 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Animation lors du survol du bouton */
+.read-more:hover {
+    background-color: #e68400;
+    transform: scale(1.05);
+}
+
+.additional-text {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    margin-top: 10px;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.show-text {
+    max-height: 2000px;
+    opacity: 1;
+}
+
+/* Pied de page */
+.footer-content {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Styles pour la galerie d'images */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.gallery a {
+    display: block;
+    border: 2px solid #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Lightbox styles */
+.lb-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+.lb-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1001; /* Ajustez le z-index pour qu'il soit supérieur à celui de l'image */
+    /* Autres styles de la croix de fermeture... */
+}
+.team-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.team-member {
+    text-align: center;
+    width: calc(25% - 20px); /* Répartit les membres en 4 colonnes avec un espace de 20px entre eux */
+}
+
+.team-member-image {
+    display: block;
+    width: 150px; /* Ajustez la largeur souhaitée */
+    height: 150px; /* Ajustez la hauteur souhaitée */
+    object-fit: cover; /* Pour conserver les proportions et couvrir toute la zone */
+    margin-right: 20px; /* Espace entre l'image et le nom */
+}
+.team-list li a {
+    text-decoration: none;
+    color: #333; /* Couleur par défaut du lien */
+    transition: color 0.3s; /* Transition fluide de la couleur */
+}
+
+.team-list li a:hover {
+    color: #ff9900; /* Couleur du lien au survol */
+}
+
+/* ... Autres styles restants ... */
+/*PageCSS2 en cours de construction ----------------------------------------------------------------------*/ 
+.like-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #888;
+    transition: color 0.3s;
+}
+
+.Chapterform {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.Chapterform {
+    display: flex;
+    align-items: center;
+}
+
+.Chapterform img {
+    margin-right: 10px; /* Adjust the spacing between image and text */
+    max-width: 100px; /* Set the maximum width of the image */
+}
+
+.text-right {
+    flex: 1; /* Expand to fill remaining width */
+}
+.profile-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-info img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.info-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.bio {
+    flex: 1;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.nickname {
+    color: #666;
+}
+
+.signature {
+    font-style: italic;
+}
+/*PageCSS2 en cours de construction DarkMode*/
+
+body.dark-mode .Chapterform{
+    text-decoration: none;
+    color: #aaa;
+ }  
+
+/*Fin PageCSS2 */
+
+.like-button.liked {
+    color: #ff0000; /* Couleur rouge pour indiquer que le bouton est cliqué */
+}
+
+/* Styles pour le mode sombre */
+body.dark-mode {
+    background-color: #111;
+    color: #fff;
+}
+
+.dark-mode-toggle {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 25px;
+    padding: 0;
+    cursor: pointer;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.dark-mode-toggle:hover {
+    color: #ff9900;
+}
+
+body.dark-mode .dark-mode-toggle {
+    color: #fff;
+}
+
+body.dark-mode .dark-mode-toggle:hover {
+    text-decoration: underline;
+}
+
+/* Styles pour le mode sombre pour le bouton "Mode Clair" */
+body.dark-mode .light-mode-toggle {
+    color: #000;
+}
+
+body.dark-mode .light-mode-toggle:hover {
+    color: #ff9900;
+}
+
+/* Style pour le titre au-dessus de l'image en mode sombre */
+body.dark-mode .image-container h4 {
+    background-color: #2f2d2d; /* Changez la couleur de fond en mode sombre */
+    color: #fff; /* Changez la couleur du texte en mode sombre */
+}
+
+body.dark-mode .news-article{
+    background-color: #2f2d2d; /* Changez la couleur de fond en mode sombre */
+    color: #fff; /* Changez la couleur du texte en mode sombre */
+}
+
+body.dark-mode .chapter-list a{
+    text-decoration: none;
+    color: #fff;
+ }    
+
+body.dark-mode .chapter-list a:hover {
+    color: #f00;
+}
+ body.dark-mode .team-list a {
+    color: lightblue;
+}
+body.dark-mode .team-list a:hover {
+        color: #ffcc00; /* Couleur du texte au survol en mode sombre */
